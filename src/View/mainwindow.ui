@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>984</width>
+    <height>726</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QWidget" name="mainwidget" native="true">
+      <widget class="QWidget" name="OpenGLWidget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>761</width>
+         <height>661</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout"/>
+      </widget>
+      <widget class="QWidget" name="ControlWidget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>760</x>
+         <y>30</y>
+         <width>171</width>
+         <height>631</height>
+        </rect>
+       </property>
+       <widget class="QWidget" name="ScaleWidget" native="true">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>300</y>
+          <width>111</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <widget class="QLineEdit" name="ScaleEdit">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>10</y>
+           <width>41</width>
+           <height>25</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="ScaleIncrease">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>10</y>
+           <width>21</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>&gt;</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="ScaleDecrease">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>21</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>&lt;</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="TransformWidget" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>151</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="TransformXWidget" native="true">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>0</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <widget class="QLineEdit" name="TransformEditX">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>10</y>
+            <width>41</width>
+            <height>25</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="IncreaseX">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>10</y>
+            <width>21</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&gt;</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="DeccreaseX">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>21</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="TransformYWidget" native="true">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>40</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <widget class="QLineEdit" name="TransformEditY">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>10</y>
+            <width>41</width>
+            <height>25</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="IncreaseY">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>10</y>
+            <width>21</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&gt;</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="DeccreaseY">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>21</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="TransformZWidget" native="true">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>80</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <widget class="QLineEdit" name="TransformEditZ">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>10</y>
+            <width>41</width>
+            <height>25</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="IncreaseZ">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>10</y>
+            <width>21</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&gt;</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="DeccreaseZ">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>21</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>20</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>X:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>20</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Y:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_4">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>90</y>
+           <width>20</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Z:</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="RotateWidget" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>160</y>
+          <width>151</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="RotateXWidget" native="true">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>0</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <widget class="QLineEdit" name="RotateEditX">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>10</y>
+            <width>41</width>
+            <height>25</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="RotateIncreaseX">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>10</y>
+            <width>21</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&gt;</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="RotateDeccreaseX">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>21</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="RotateYWidget" native="true">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>40</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <widget class="QLineEdit" name="RotateEditY">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>10</y>
+            <width>41</width>
+            <height>25</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="RotateIncreaseY">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>10</y>
+            <width>21</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&gt;</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="RotateDeccreaseY">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>21</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="RotateZWidget" native="true">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>80</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <widget class="QLineEdit" name="RotateEditZ">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>10</y>
+            <width>41</width>
+            <height>25</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="RotateIncreaseZ">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>10</y>
+            <width>21</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&gt;</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="RotateDeccreaseZ">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>21</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QLabel" name="label_5">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>90</y>
+           <width>20</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Z:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_6">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>20</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>X:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_7">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>20</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Y:</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="Transform">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>10</y>
+          <width>91</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Transform</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Rotate">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>150</y>
+          <width>91</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Rotate</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Scale">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>290</y>
+          <width>91</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Scale</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="BackGroundColor">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>360</y>
+          <width>121</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>BackgroundColor</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="PointSize">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>400</y>
+          <width>41</width>
+          <height>25</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="EdgeSize">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>440</y>
+          <width>41</width>
+          <height>25</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="edgeColor">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>480</y>
+          <width>81</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Edge Color</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pointColor">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>480</y>
+          <width>81</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PointColor</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="DashedEdges">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>440</y>
+          <width>111</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Dashed Edges</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="OrthoProjection">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>520</y>
+          <width>121</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ortho Projection</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="VertexTypeButton">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>400</y>
+          <width>51</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>None</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="VertexType">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>400</y>
+          <width>81</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Vertex Type</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="ModelInfo">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>580</y>
+          <width>161</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ScreenShot">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>550</y>
+          <width>89</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Screenshot</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>790</x>
+         <y>0</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Choose File</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>984</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

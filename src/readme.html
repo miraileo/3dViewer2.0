@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+  <title>3DViewer_v2.0 manual page</title>
+  <meta charset="utf8">
+
+</head>
+
+<body>
+  <h1 style="text-align:center"><span style="font-size:26px">Инструкция по использованию 3DViewer v2.0</span>
+  </h1>
+
+  <p><span style="font-size:20px">Установка:</span></p>
+  <ol>
+    <li>Вызвать цель
+      <i>make install</i> из папки src.
+    </li>
+    <li>Дождаться установки.</li>
+  </ol>
+
+  <p><span style="font-size:20px">Сборка в архив:</span></p>
+  <ol>
+    <li>Вызвать цель <i>make dist</i> из папки src.</li>
+    <li>Архив собирается в папку <i>src</i>.</li>
+  </ol>
+
+  <p><span style="font-size:20px">Удаление:</span></p>
+  <ol>
+    <li>Вызвать цель <i>make uninstall</i> из папки src.</li>
+    <li>Дождаться удаления</li>
+  </ol>
+
+  <p><span style="font-size:20px">Запуск и использование:</span></p>
+
+  <ol>
+    <li>Для запуска приложения написать make build или просто make</li>
+    <li>Программа загружает файлы в формате *.obj.</li>
+    <li> После загрузки объектного файла доступен весь функционал в графическом интерфейсе, перемещение по осям возможно
+      при
+      помощи соответствующих слайдеров на цифровой панели программы.</li>
+    <li>Для выбора необходимого цветового решения необходимо использовать кнопки "PointColor", "EdgeColor",
+      "Background color". Для сохранения в формате bmp, jpg использовать кнопку screenshot.</li>
+  </ol>
+
+  <ul>
+    <li>3DViewer v1.0 поддерживает следующие действия: </li>
+    <ul>
+      <li>Перемещение и вращение: </li>
+      <ol>
+        <li>Перемещение по оси X: <i>"Translate X: от -180 до +180"</i></li>
+        <li>Перемещение по оси Y: <i>"Translate Y: от -180 до +180"</i></li>
+        <li>Перемещение по оси Z:<i>"Translate Z: от -180 до +180"</i></li>
+        <li>Вращение по оси X: <i>"Rotate X: от -180 до +180"</i></li>
+        <li>Вращение по оси Y: <i>"Rotate Y: от -180 до +180"</i></li>
+        <li>Вращение по оси Z: <i>"Rotate Z: от -180 до +180"</i></li>
+        <li>Приближение: <i> "Scale от 1 - до 100"</i></li>
+      </ol>
+      <li>Опции:</li>
+      <ol>
+        <li>Тип проекции: <i>"Central" - центральная, "ortho" - параллельная</i></li>
+        <li>Тип вершин: <i>"None" - невидимые, "Circle" - шарообразные , "Square" - квадратные</i></li>
+        <li>Тип граней: <i>"Solid - прямые, "Dashed" - пунктирные</i></li>
+        <li>Толщина граней: <i>"Справо от типа граней"</i></li>
+        <li>Цвет вершин: <i>"PointColor"</i></li>
+        <li>Цвет граней: <i>"EdgeColor"</i></li>
+        <li>Цвет заднего фона: <i> "Background color"</i></li>
+        <li>Сохранение значений в формате: bmp или jpg <i>"screenshot"</i></li>
+      </ol>
+    </ul>
+    <br>
+  </ul>
+
+  <p><span style="font-size:14px">Program 3DViewer_v2.0.</span></p>
+</body>
